@@ -1,0 +1,202 @@
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.wave-text {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6b6b, #ff9a8b, #fecfef);
+    background-size: 200% 200%;
+    animation: gradient-wave 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accordion {
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    border-bottom: 1px solid #ddd;
+}
+
+.active, .accordion:hover {
+    background-color: #ddd;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #ddd;
+}
+
+.panel p {
+    margin: 15px 0;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+form {
+    margin: 20px 0;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    color: rgb(250, 10,200);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@keyframes gradient-wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Default styles for larger screens (desktops) */  
+.form-group {  
+    margin-bottom: 20px; /* Default margin for desktops */  
+}  
+
+.btn {  
+    width: auto; /* Default width for buttons on larger screens */  
+}  
+
+ul {  
+    padding: 10px; /* Default padding for lists */  
+}  
+
+/* Styles for tablets (between 601px and 900px) */  
+@media (max-width: 900px) {  
+    .form-group {  
+        margin-bottom: 15px; /* Reduced margin for tablets */  
+    }  
+
+    .btn {  
+        width: 50%; /* Buttons take half the width on tablets */  
+    }  
+
+    ul {  
+        padding: 5px; /* Reduced padding for lists on tablets */  
+    }  
+}  
+
+/* Styles for mobile devices (up to 600px) */  
+@media (max-width: 600px) {  
+    .form-group {  
+        margin-bottom: 15px; /* Consistent margin for mobile */  
+    }  
+
+    .btn {  
+        width: 100%; /* Buttons take full width on mobile */  
+    }  
+
+    ul {  
+        padding: 0; /* No padding for lists on mobile */  
+    }  
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-summary {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.dashboard-chart {
+    margin-top: 30px;
+}
+@media (max-width: 600px) {
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    ul {
+        padding: 0;
+    }
+}
+
+/* styles.css */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    font-size: 2rem; /* Adjust font size */
+    color: #007bff; /* Optional: Bootstrap primary color */
+}
+<!-- Fallback for flexbox -->
+    .fallback-flex {
+        display: block;
+    }
+
+    @supports (display: flex) {
+        .fallback-flex {
+            display: flex;
+        }
+    }
+/* Style.css */
+
+nav {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+</style>
